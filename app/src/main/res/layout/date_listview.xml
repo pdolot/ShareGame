@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/lv_hour"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="16:00"
+        android:textSize="14dp"
+        android:textColor="@color/iconTextColor" />
+
+    <include
+        android:id="@+id/dayFirst"
+        layout="@layout/schedule_listview"/>
+    <include
+        android:id="@+id/daySecond"
+        layout="@layout/schedule_listview"/>
+    <include
+        android:id="@+id/dayThird"
+        layout="@layout/schedule_listview"/>
+    <include
+        android:id="@+id/dayFourth"
+        layout="@layout/schedule_listview"/>
+    <include
+        android:id="@+id/dayFifth"
+        layout="@layout/schedule_listview"/>
+    <include
+        android:id="@+id/daySixth"
+        layout="@layout/schedule_listview"/>
+    <include
+        android:id="@+id/daySeventh"
+        layout="@layout/schedule_listview"/>
+
+</LinearLayout>

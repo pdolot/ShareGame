@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:gravity="center" android:bottom="46sp">
+        <shape android:shape="rectangle">
+            <size android:height="50sp"></size>
+            <solid android:color="#1b1b1b"></solid>
+        </shape>
+    </item>
+
+    <item android:gravity="center" android:top="19sp" android:left="100sp">
+        <rotate android:pivotY="100%" android:pivotX="0%" android:fromDegrees="-22.5">
+            <shape android:shape="rectangle">
+                <size android:width="100sp" android:height="50sp"></size>
+                <solid android:color="#1b1b1b"></solid>
+            </shape>
+        </rotate>
+    </item>
+
+    <item android:gravity="center" android:top="19sp" android:right="100sp">
+        <rotate android:pivotY="100%" android:pivotX="100%" android:fromDegrees="22.5">
+            <shape android:shape="rectangle">
+                <size android:width="100sp" android:height="50sp"></size>
+                <solid android:color="#1b1b1b"></solid>
+            </shape>
+        </rotate>
+    </item>
+
+    <item android:gravity="center" android:top="15sp" android:left="100sp">
+        <rotate android:pivotY="100%" android:pivotX="0%" android:fromDegrees="-22.5">
+            <shape android:shape="rectangle">
+                <size android:width="100sp" android:height="50sp"></size>
+                <solid android:color="@color/barColor"></solid>
+            </shape>
+        </rotate>
+    </item>
+
+    <item android:gravity="center" android:top="15sp" android:right="100sp">
+        <rotate android:pivotY="100%" android:pivotX="100%" android:fromDegrees="22.5">
+            <shape android:shape="rectangle">
+                <size android:width="100sp" android:height="50sp"></size>
+                <solid android:color="@color/barColor"></solid>
+            </shape>
+        </rotate>
+    </item>
+
+    <item android:gravity="center" android:bottom="50sp">
+        <shape android:shape="rectangle">
+            <size android:height="50sp"></size>
+            <solid android:color="@color/barColor"></solid>
+        </shape>
+    </item>
+
+
+
+</layer-list>

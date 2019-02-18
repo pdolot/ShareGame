@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".PaymentActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/barColor"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="5dp"
+                android:text="Dane rezerwacji"
+                android:textAlignment="center"
+                android:textColor="@color/turquioselv2"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fieldMarginTop"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Data rezerwacji"
+                    android:textAlignment="center"
+                    android:textColor="@color/iconTextColor"
+                    android:textSize="@dimen/fieldText" />
+
+                <TextView
+                    android:id="@+id/reservationDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="sans-serif-light"
+                    android:text="2019-01-09"
+                    android:textAlignment="center"
+                    android:textColor="@color/iconTextColor"
+                    android:textSize="@dimen/fieldText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Godziny rezerwacji"
+                    android:textAlignment="center"
+                    android:textColor="@color/iconTextColor"
+                    android:textSize="@dimen/fieldText" />
+
+                <TextView
+                    android:id="@+id/reservationHours"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="sans-serif-light"
+                    android:text="18:00-19:00"
+                    android:textAlignment="center"
+                    android:textColor="@color/iconTextColor"
+                    android:textSize="@dimen/fieldText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Cena rezerwacji"
+                    android:textAlignment="center"
+                    android:textColor="@color/iconTextColor"
+                    android:textSize="@dimen/fieldText" />
+
+                <TextView
+                    android:id="@+id/reservationPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="sans-serif-light"
+                    android:text="156,00 zł"
+                    android:textAlignment="center"
+                    android:textColor="@color/iconTextColor"
+                    android:textSize="@dimen/fieldText" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Uzupełnij dane do płatności"
+            android:textAlignment="center"
+            android:textColor="@color/iconTextColor"
+            android:textSize="@dimen/fieldText" />
+
+
+        <EditText
+            android:drawableRight="@drawable/ic_payment"
+            android:drawableTint="@color/backgroundColor"
+            android:id="@+id/creditCard"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/fieldMarginTop"
+            android:background="@drawable/buttonsearch"
+            android:fontFamily="sans-serif-light"
+            android:hint="Karta kredytowa"
+            android:inputType="phone"
+            android:maxLength="19"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="@dimen/fieldText"
+            android:theme="@style/Autocomplete" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fieldMarginTop"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <EditText
+                android:id="@+id/creditValidDate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/buttonsearch"
+                android:fontFamily="sans-serif-light"
+                android:hint="MM/YY"
+                android:inputType="phone"
+                android:maxLength="5"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/fieldText"
+                android:theme="@style/Autocomplete" />
+
+            <EditText
+                android:id="@+id/CVC"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/buttonsearch"
+                android:fontFamily="sans-serif-light"
+                android:hint="CVC"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingLeft="20dp"
+                android:textSize="@dimen/fieldText"
+                android:theme="@style/Autocomplete" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="60dp"
+            app:cardBackgroundColor="#00000000"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:id="@+id/pay"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/reserveandpay"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="Zapłać"
+                    android:textColor="@color/iconTextColor"
+                    android:textSize="18dp" />
+                5
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

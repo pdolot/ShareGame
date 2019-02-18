@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#056B7D</color>
+    <color name="colorPrimaryDark">#10C8E8</color>
+    <color name="colorAccent">#52e5ff</color>
+    <color name="iconColor">#9d9d9d</color>
+    <color name="iconTextColor">#d1d1d1</color>
+    <color name="barColor">#232323</color>
+    <color name="backgroundColor">#272727</color>
+    <color name="barBorderColor">#494949</color>
+    <color name="barBorderColor2">#050505</color>
+    <color name="white">#ffffff</color>
+    <color name="transparentWhite">#a0ffffff</color>
+    <color name="turquioselv2">#10C8E8</color>
+    <color name="turquiose">#056B7D</color>
+    <color name="magenta">#A80237</color>
+    <color name="magentalv2">#F5004E</color>
+    <color name="magentalv3">#FF3D7A</color>
+    <color name="sf_close">#ffcb3d</color>
+
+
+</resources>

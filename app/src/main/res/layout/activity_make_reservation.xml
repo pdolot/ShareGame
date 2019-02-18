@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Options.UserHistory"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bartop"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rezerwacja"
+            android:textColor="@color/iconTextColor"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fieldMarginTop"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/schedule_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/res_data_swipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/res_prev_date"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/ic_arrowleft"
+                    android:backgroundTint="@color/iconTextColor" />
+
+                <TextView
+                    android:id="@+id/res_day"
+                    android:layout_width="226dp"
+                    android:layout_height="38dp"
+                    android:gravity="center"
+                    android:text="15/11/2018"
+                    android:textColor="@color/iconTextColor"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/res_next_date"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/ic_arrowright"
+                    android:backgroundTint="@color/iconTextColor" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/day_of_week"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/iconTextColor"
+                android:textSize="15dp" />
+
+            <HorizontalScrollView
+                android:id="@+id/res_hsv_schedule"
+                android:layout_below="@id/data_swipper"
+                android:layout_marginTop="@dimen/fieldMarginTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/res_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/res_dayStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/textMarginTop"
+                android:textColor="@color/sf_close"
+                android:textSize="@dimen/fieldText"
+                android:textAlignment="center"
+                android:text=""
+                />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/fieldMarginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="35sp"
+                    android:layout_height="15sp"
+                    android:background="@color/turquiose"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="15sp"
+                    android:textColor="@color/iconTextColor"
+                    android:text="  -   termin zajęty     "
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="35sp"
+                    android:layout_height="15sp"
+                    android:background="@color/turquioselv2"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="15sp"
+                    android:textColor="@color/iconTextColor"
+                    android:text="  -   termin zarezerwowany"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/fieldMarginTop"
+                android:background="@drawable/divide" />
+
+            <TextView
+                android:id="@+id/choosedHours"
+                android:layout_marginTop="@dimen/fieldMarginTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*zaznacz na terminarzu godziny"
+                android:textSize="@dimen/fieldText"
+                android:textColor="@color/iconTextColor"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardBackgroundColor="#00000000"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/b_reserve"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/reserve"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:clickable="false"
+                        >
+
+                        <TextView
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rezerwuj"
+                            android:textColor="@color/iconTextColor"
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    app:cardBackgroundColor="#00000000"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/b_reserve_and_pay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/reserveandpay"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:clickable="false">
+
+                        <TextView
+                            android:gravity="center"
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rezerwuj i zapłać"
+                            android:textColor="@color/iconTextColor"
+
+                            android:textSize="13dp" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:navigationBarColor">#161616</item>
+    </style>
+
+    <style name="MainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/barColor</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#bababa</item>
+        <item name="colorControlActivated">#ffb300</item>
+    </style>
+
+    <style name="Autocomplete">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:colorControlActivated">#5e5e5e</item>
+    </style>
+
+    <style name="customDialog" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textColor">@color/turquiose</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".MainFragments.optionsFragment">
+
+    <RelativeLayout
+        android:id="@+id/options_not_logged_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/notloggedbackground"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/co_one"
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_circle" />
+
+        <ImageView
+            android:id="@+id/co_second"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_circle4"
+            android:rotation="90" />
+
+        <ImageView
+            android:id="@+id/co_third"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_circle"
+            android:rotation="180" />
+
+        <ImageView
+            android:id="@+id/co_fourth"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_circle4"
+            android:rotation="360" />
+
+        <ImageView
+            android:id="@+id/co_fifth"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle"
+            android:rotation="360" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/options_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Zaloguj się!"
+                android:textAlignment="center"
+                android:textColor="@color/turquioselv2"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-light"
+                android:text="lub jeśli nie masz konta"
+                android:textAlignment="center"
+                android:textColor="@color/iconTextColor"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/options_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Zarejestruj się!"
+                android:textAlignment="center"
+                android:textColor="@color/magentalv2"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/userInfoBanner"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/ic_lowpoly"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/useravatar"
+                app:civ_border_color="#d2d2d2"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="patrykd95"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                app:cardBackgroundColor="@color/backgroundColor"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:id="@+id/menu_userFacilities"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/item_outline_dark">
+
+                    <Button
+                        android:clickable="false"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/ic_rents"
+                        android:backgroundTint="@color/iconColor"/>
+
+                    <TextView
+                        android:clickable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Twoje obiekty"
+                        android:textSize="10dp"
+                        android:textColor="@color/iconTextColor"
+                        android:fontFamily="sans-serif-light"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="60dp"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                app:cardBackgroundColor="@color/backgroundColor"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:id="@+id/menu_userHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/item_outline_dark">
+
+                    <Button
+                        android:clickable="false"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/ic_history"
+                        android:backgroundTint="@color/iconColor"/>
+
+                    <TextView
+                        android:clickable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Historia"
+                        android:textSize="10dp"
+                        android:textColor="@color/iconTextColor"
+                        android:fontFamily="sans-serif-light"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                app:cardBackgroundColor="@color/backgroundColor"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:id="@+id/menu_userFavorites"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/item_outline_dark">
+
+                    <Button
+                        android:clickable="false"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/ic_favorite"
+                        android:backgroundTint="@color/iconColor"/>
+
+                    <TextView
+                        android:clickable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ulubione"
+                        android:textSize="10dp"
+                        android:textColor="@color/iconTextColor"
+                        android:fontFamily="sans-serif-light"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginLeft="60dp"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                app:cardBackgroundColor="@color/backgroundColor"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:id="@+id/menu_userEditProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/item_outline_dark">
+
+                    <Button
+                        android:clickable="false"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/ic_settings"
+                        android:backgroundTint="@color/iconColor"/>
+
+                    <TextView
+                        android:clickable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edytuj profil"
+                        android:textSize="10dp"
+                        android:textColor="@color/iconTextColor"
+                        android:fontFamily="sans-serif-light"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                app:cardBackgroundColor="@color/backgroundColor"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:id="@+id/menu_userLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/item_outline_dark">
+
+                    <Button
+                        android:clickable="false"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/ic_arrowright"
+                        android:backgroundTint="@color/iconColor"
+                        android:scaleX="1.5"
+                        android:scaleY="1.5"/>
+
+                    <TextView
+                        android:clickable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wyloguj"
+                        android:textSize="10dp"
+                        android:textColor="@color/iconTextColor"
+                        android:fontFamily="sans-serif-light"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

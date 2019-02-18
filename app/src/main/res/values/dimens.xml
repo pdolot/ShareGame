@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fieldMarginTop">10dp</dimen>
+    <dimen name="textMarginTop">5dp</dimen>
+    <dimen name="fieldNameText">10sp</dimen>
+    <dimen name="fieldText">15sp</dimen>
+</resources>

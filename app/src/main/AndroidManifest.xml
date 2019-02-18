@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.patryk.sharegame2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    ﻿
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".StartActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_API_key" />
+
+        <activity
+            android:name=".MainFragments.MainActivity"
+            android:theme="@style/MainTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FacilityView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddFacility"
+            android:theme="@style/MainTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Options.UserSportFacilities"
+            android:theme="@style/MainTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Options.UserHistory"
+            android:theme="@style/MainTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Options.UserFavorites"
+            android:theme="@style/MainTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Options.EditProfile"
+            android:theme="@style/MainTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RememberPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MakeReservation"
+            android:theme="@style/MainTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchResultActivity"
+            android:theme="@style/MainTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditFacility"
+            android:theme="@style/MainTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentActivity"
+            android:theme="@style/MainTheme"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

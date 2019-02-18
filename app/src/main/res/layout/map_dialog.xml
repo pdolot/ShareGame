@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="60dp"
+    map:cardElevation="10dp"
+    >
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapInDialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:background="@drawable/custombutton"
+            android:id="@+id/map_close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="Zamknij"
+            android:textColor="@color/iconTextColor"/>
+
+        <TextView
+            android:background="@drawable/custombutton"
+            android:id="@+id/map_accept"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="Akceptuj"
+            android:textColor="@color/iconTextColor"/>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/barradious"
+    android:minHeight="400dp"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    app:behavior_peekHeight="49dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button"
+        android:stateListAnimator="@null" />
+
+    <LinearLayout
+        android:id="@+id/layout_if_not_logged"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kliknij na obiekt"
+            android:textAlignment="center"
+            android:textColor="@color/iconColor" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/facilityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-light"
+                android:text=""
+                android:textColor="@color/iconTextColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/facilityAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text=""
+                android:textColor="@color/iconTextColor"
+                android:textSize="16dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:stepSize="0.5"
+                    android:theme="@style/RatingBar"
+                    android:translationX="-26dp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/ratingsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/iconTextColor"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/facilityOpenHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text=""
+                    android:textColor="@color/iconTextColor"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/isOpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:fontFamily="sans-serif-light"
+                    android:text=""
+                    android:textColor="@color/iconTextColor"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/facilitySports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text=""
+                android:textColor="@color/iconTextColor"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/facilityOffer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:fontFamily="sans-serif-light"
+                android:text=""
+                android:textColor="@color/iconTextColor"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

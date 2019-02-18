@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="32dp"
+    android:layout_height="30dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/butTop"
+        android:layout_width="16dp"
+        android:layout_height="15dp"
+        android:background="#f45f5f"/>
+
+    <Button
+        android:id="@+id/butBottom"
+        android:layout_width="16dp"
+        android:layout_height="15dp"
+        android:background="@drawable/schedule" />
+</LinearLayout>
